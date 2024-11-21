@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Recommender Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Video background -->
+    <video autoplay loop muted id="background-video">
+      <!-- <source src="img/bg2.mp4" type="video/mp4" /> -->
+      Your browser does not support the video tag.
+    </video>
+    <div id="background-overlay"></div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <h2>Game Recommender Bot</h2>
+      </div>
+      <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+          Hello! saya adalah Bot recommender game.
+        </div>
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type a message..."
+          autofocus
+        />
+        <button onclick="handleUserInput()">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
